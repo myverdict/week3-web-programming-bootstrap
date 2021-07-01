@@ -15,5 +15,5 @@ HTML forms, inputs, classes, ids &amp; bootstrap Introduction
   <li>Conference Registration Form</li>
 </ul>
 
-<a href="https://myverdict.github.io/week2-web-programming-bootstrap/index.html">
+<a href="https://myverdict.github.io/week3-web-programming-bootstrap/index.html">
     Click here to view live!</a>  
