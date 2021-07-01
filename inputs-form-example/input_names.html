@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input names</title>
+</head>
+
+<body>
+    <ul>
+        <!-- Simplest form of input; default is "text" if type attribute is unspecified -->
+        <li>Unspecified input type - default is text</li>
+        Enter some text: <input>
+        
+        <br><br>
+
+        <!-- Input types -->
+        <li>Text input</li>
+        Name: <input type="text" name="username">
+        
+        <br><br>
+
+        <li>Email input</li>
+        Email: <input type="email" name="user-email">
+        
+        <br><br>
+        
+        <li>Number input</li>
+        Lucky number: <input type="number" value="0" name="lucky-number">
+        
+        <br><br>
+        
+        <li>Date input</li>
+        Date: <input type="date" name="date">
+        
+        <br><br>
+        
+        <li>Time input</li>
+        Time: <input type="time" name="time">
+        
+        <br><br>
+        
+        <li>Range input - default range is 0 to 100</li>
+        Volume settings: <input type="range" name="volume-range">
+        
+        <br><br>
+        
+        <li>Color input - default value is #000000 (black)</li>
+        Favorite color: <input type="color" name="fav-color">
+        
+        <br><br>
+        
+        <li>Password input</li>
+        Password: <input type="password" name="pwd">
+        
+        <br><br>
+        
+        <li>Search input</li>
+        <!-- Remember to set a name for the search field, otherwise nothing will be submitted. -->
+        Search Google: <input type="search" name="gsearch">
+        
+        <br><br>
+        
+        <li>Checkbox input</li>
+        Are you sure? <input type="checkbox" name="surety" checked>
+        
+        <br><br>
+        
+        <li>Textarea</li>
+        Feedback: <textarea rows="15" cols="50" name="feedback"></textarea>
+        
+        <br><br>
+        
+        <li>Dropdown list</li>
+        Favorite season:
+        <select name="fav-season">
+            <option>Spring</option>
+            <option>Summer</option>
+            <option>Fall</option>
+        </select>
+        
+        <br><br>
+
+        <li>Radio buttons - Always group radio buttons with the name attribute</li>
+        Are you a student: 
+        <!-- If there is no name attribute, then the radio buttons would not be synchronized as per the group. -->
+        <input name="choice" type="radio" checked>Yes
+        <input name="choice" type="radio">No
+
+        <br><br>
+
+        <li>Uploading a file</li>
+        <input type="file" name="file">
+        
+        <br><br>
+
+        <li>Submit input button</li>
+        <input type="submit" value="Submit" name="submit">
+    </ul>
+</body>
+</html>

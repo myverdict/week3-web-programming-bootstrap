@@ -1,0 +1,15 @@
+/* CSS file for fav_program_bootstrap.html */
+
+/* Classes */
+.header {
+    text-align: center;
+    background-color: indianred;
+}
+
+.github-link {
+    background-color: lightcoral;
+}
+
+.font-mono {
+    font-family: 'Courier New', Courier, monospace;
+}

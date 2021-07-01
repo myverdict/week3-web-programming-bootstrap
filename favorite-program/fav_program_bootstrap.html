@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Program</title>
+
+    <!-- Bootstrap link here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+          crossorigin="anonymous">
+    
+    <!-- Font awesome link here for code icon -->
+    <script src="https://kit.fontawesome.com/e89de77ab7.js" crossorigin="anonymous"></script>
+
+    <!-- CSS stylesheet link here -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<!-- Bootstrap body with class for margin size 3 -->
+<body class="m-4 bg-secondary text-white">
+    <!-- 
+        Alternate way to create jumbotron in Bootstrap v5.0 - div with classes 
+        for designing header: padding size 5, background-gradient with rounded corners 
+    -->
+    <div class="p-5 bg-gradient rounded header">
+        <h1>Favorite Program: Ingredient Calculator</h1>
+    </div>
+
+    <!-- Creating one row with margin size 3-->
+    <div class="row m-3">               <!-- Bootstrap row class -->
+        <!-- Creating 2 columns -->
+        <div class="col-md-5">          <!-- Bootstrap 1st column spanning 5 columns -->
+            <!-- bootstrap margin size 3 on x-axis (left & right), font size 5, & padding size 4 -->
+            <div class="mx-3 fs-4 p-4">
+                <p>
+                    The IngredientAdjuster class displays the quantities of sugar, 
+                    butter and flour needed to prepare cookies (by entering the number 
+                    of cookies as input at keyboard).
+                </p>
+                
+                <br>
+                
+                <p>
+                    <!-- 
+                        Bootstrap image-fluid class for responsiveness. This applies 
+                        max-width: 100%; and height: auto; to the image so that it 
+                        scales with the parent element. 
+                    -->
+                    <img src="code_output.png" alt="IngredientAdjuster code output"
+                         class="img-fluid">
+                </p>
+
+                <br>
+
+                <!-- Bootstrap for font size 5 & padding size 4 -->
+                <p class="fs-5 p-3 github-link">
+                    <!-- Font awesome laptop code icon -->
+                    <i class="fas fa-laptop-code"></i>
+                    Please click the <span class="font-mono">.java</span> 
+                    file name for the GitHub link: 
+                    <!-- Bootstrap code for removing underline for the link, making it bold with a darker text color -->
+                    <a href="https://myverdict.github.io/week3-web-programming-bootstrap/favorite-program/IngredientAdjuster.java" 
+                       target="_blank" 
+                       class="text-decoration-none fw-bold text-dark">
+                        <span class="font-mono">IngredientAdjuster.java</span>
+                    </a>
+                </p>
+            </div>
+        </div>                          <!-- end of bootstrap 1st column -->
+
+
+        <!-- Bootstrap border for code -->
+        <div class="col-md-7 border border-white">      <!-- Bootstrap 2nd column spanning 7 columns-->
+            <!-- bootstrap margin size 4 on x-axis (left & right) -->
+            <div class="mx-4">
+                <pre>
+                    <code>
+import java.util.Scanner;
+
+public class IngredientAdjuster {
+    public static void main(String[] args) {
+        int cookies = 48;               // Cookies already cooked.
+        int makeCookies;                // Number of cookies to be made.
+        double sugarCup = 1.5;          // Sugar quantity per cup.
+        double butterCup = 1;           // Butter quantity per cup.
+        double flourCup = 2.75;         // Flour quantity per cup.
+        double sugar, butter, flour;    // Quantities to make cookies.
+			 
+        // Create a Scanner object to read keyboard input.           
+        Scanner keyboard = new Scanner(System.in);
+		
+        // Get the number of cookies to be made.
+        System.out.print("Enter the number of cookies: ");
+        makeCookies = keyboard.nextInt();
+
+        // Calculate the quantities for cookies to be made.
+        sugar = makeCookies * sugarCup / cookies;
+        butter = makeCookies * butterCup / cookies;
+        flour = makeCookies * flourCup / cookies;
+
+        // Display quantities for cookies to be made.
+        System.out.println("To make " + makeCookies + " cookies, " + 
+                           "you will need: \n" +
+                            sugar + " cups of sugar\n" + 
+                            butter + " cups of butter\n" + 
+                            flour + " cups of flour");
+    }
+}
+                    </code>
+                </pre>
+            </div>                  <!-- end of code div -->
+        </div>                      <!-- end of bootstrap 2nd column -->
+    </div>                          <!-- end of bootstrap row class -->
+</body>
+</html>

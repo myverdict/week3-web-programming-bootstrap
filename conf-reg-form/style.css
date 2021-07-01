@@ -1,0 +1,23 @@
+/* CSS for registration_form.html */
+
+body {
+    background-color: lightgray;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+label, .title {
+    font-size: large;
+}
+
+input:hover, textarea:hover, select:hover {
+    background-color: rosybrown;
+}
+
+/* Classes */
+.header {
+    /* gradient image background for header */
+    background-image: linear-gradient(#FAFAD2, #BC8F8F);
+    text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}

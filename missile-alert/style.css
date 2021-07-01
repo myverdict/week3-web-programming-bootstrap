@@ -1,0 +1,51 @@
+@keyframes blinker {
+    75% { 
+        opacity: 0;
+    }
+}
+
+body {
+    margin: 30px;
+}
+
+h1 {
+    padding: 20px;
+}
+
+/* ID */
+#real-alert {
+    border: 2px black double;
+    color: darkslateblue;
+}
+
+#real-alert:hover {
+    /* animation: blinker 1.5s linear; */
+    animation-name: blinker;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    padding: 20px;
+    background-color: yellowgreen;
+    color: red;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#test-only {
+    background-color: palevioletred;
+    color: darkred;
+    border: 2px purple double;
+    float: right;
+}
+
+
+/* Class */
+.missile-link {
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    width: 175px;
+    text-align: center;
+}

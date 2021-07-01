@@ -1,0 +1,19 @@
+/* 
+    CSS stylesheet for bootstrap_n_custom_colors_fonts.html &  
+    bootstrap_responsive_design.html files.
+*/
+
+body {
+    background-color: #d5ebe0;
+}
+
+/* Classes */
+/* font-family taken from google fonts */
+.header {
+    border: 5px solid white;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.txt-font {
+    font-family: 'Raleway', sans-serif;
+}
