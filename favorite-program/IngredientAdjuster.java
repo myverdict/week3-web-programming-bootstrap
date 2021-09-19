@@ -6,6 +6,7 @@ import java.util.Scanner;				// Needed for the Scanner class.
 	at keyboard).
 	
 	Homework assignment 1 (January 16, 2018)
+	[Saint Paul College, Prof. James Woodcock, Spring 2018 semester]
 	Programming Challenge 17, Page 108, Chapter 2: Java Fundamentals
 	Score: 24/25
 	Comments: your comments should be indented the same as the rest of the 
