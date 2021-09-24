@@ -1,5 +1,5 @@
 # week3-web-programming-bootstrap
-HTML forms, inputs, classes, ids &amp; bootstrap Introduction
+HTML forms, inputs, classes, ids &amp; bootstrap introduction
 
 <h1>WEB PROGRAMMING</h1>
 
