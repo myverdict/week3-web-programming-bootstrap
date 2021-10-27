@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required radio form</title>
+</head>
+
+<body>
+    <!-- https://www.w3docs.com/snippets/html/how-to-use-the-required-attribute-with-the-radio-input-field.html -->
+    <form>
+        <!-- 
+            Require at least one of the radio buttons in the group. 
+            Remember a group is two or more radio buttons with the same name.
+        -->
+        <p>What type of credit card?</p>
+    
+        <input type="radio" name="question" id="visa" required> 
+        <label for="visa">Visa</label><br>
+        
+        <input type="radio" name="question" id="mc"> 
+        <label for="mc">MasterCard</label><br>
+        
+        <input type="radio" name="question" id="amex">
+        <label for="amex">American Express</label><br><br>
+        
+        <input type="submit">
+    </form> 
+</body>
+
+</html>
