@@ -4,15 +4,15 @@
 
 /* for 2 columns row */
 .col2 {
-    border: 3px solid darkred;
+  border: 3px solid darkred;
 }
 
 /* for 3 columns row */
 .col3 {
-    border: 3px solid orangered;
+  border: 3px solid orangered;
 }
 
 /* bootstrap class */
 .container-fluid {
-    background-color: lightpink;
+  background-color: lightpink;
 }

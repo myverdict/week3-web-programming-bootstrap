@@ -1,111 +1,121 @@
-<!DOCTYPE html>     <!--Specifying HTML 5-->
+<!DOCTYPE html>
+<!--Specifying HTML 5-->
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>First Bootstrap Elements</title>
-
-    <!-- 
+    <!--
         The viewport is the visible area of a page. Pages may be wider
         than the screen or browser window; and pages are often longer than
         the browser window. This tag sets the width of the page equal to the
-        width of the browser window. The height stays the same. 
+        width of the browser window. The height stays the same.
     -->
-    <meta name="viewport" content="width=device-width initial-scale=1">
-
-    <!-- 
-        This downloads Bootstrap from a CDN. You can also host Bootstrap on your 
-        own server, but it's usually faster for the user for their browser to fetch 
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <!--
+        This downloads Bootstrap from a CDN. You can also host Bootstrap on your
+        own server, but it's usually faster for the user for their browser to fetch
         it from a CDN (content delivery network).
      -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-          crossorigin="anonymous">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- CSS link here -->
-    <link rel="stylesheet" href="style-columns.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="style-columns.css" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <!-- Bootstrap class for full-width container -->
     <div class="container-fluid">
-        <h1>Computer Programming</h1>
+      <h1>Computer Programming</h1>
 
-        <!-- Will display the screen width here. Script code below -->
-        <h2 id="width"></h2>
+      <!-- Will display the screen width here. Script code below -->
+      <h2 id="width"></h2>
 
-        <br>
+      <br />
 
-        <!-- Need to define the rows & columns -->
-        <!-- first row, which will contain two columns -->
-        <div class="row">
-            <!-- Inside the row, create a column. This column is 6 units wide -->
-            <!-- md: Will be horizontal above 990px screen width, stacked otherwise -->
-            <div class="col-md-6 col2">
-                <img src="images/computer.jpg" width="350px">
-            </div>
+      <!-- Need to define the rows & columns -->
+      <!-- first row, which will contain two columns -->
+      <div class="row">
+        <!-- Inside the row, create a column. This column is 6 units wide -->
+        <!-- md: Will be horizontal above 990px screen width, stacked otherwise -->
+        <div class="col-md-6 col2">
+          <img src="images/computer.jpg" width="350px" />
+        </div>
 
-            <!-- Still inside the row, add a second column, also 6 units wide -->
-            <div class="col-md-6 col2">
-                <h2>A list of programming languages</h2>
-      
-                <ul>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>Python</li>
-                </ul>
-            </div>
-        </div>      <!-- end of first row -->
+        <!-- Still inside the row, add a second column, also 6 units wide -->
+        <div class="col-md-6 col2">
+          <h2>A list of programming languages</h2>
 
-        <br>
+          <ul>
+            <li>Java</li>
+            <li>C#</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+      <!-- end of first row -->
 
-        <!-- Create a second row with 3 columns, each 4 units wide -->
-        <div class="row">
-            <!-- sm: Will be horizontal above 768px screen width, stacked otherwise -->
-            <div class="col-sm-4 col3">
-                <h2>Java</h2>
-                <p>Java is a compiled, OO language</p>
-            </div>
+      <br />
 
-            <div class="col-sm-4 col3">
-                <h2>C#</h2>
-                <p>C# is also a compiled, OO language</p>
-            </div>
+      <!-- Create a second row with 3 columns, each 4 units wide -->
+      <div class="row">
+        <!-- sm: Will be horizontal above 768px screen width, stacked otherwise -->
+        <div class="col-sm-4 col3">
+          <h2>Java</h2>
+          <p>Java is a compiled, OO language</p>
+        </div>
 
-            <div class="col-sm-4 col3">
-                <h2>Python</h2>
-                <p>Python is an interpreted language</p>
-            </div>
-        </div>      <!-- end of second row -->
-        
-        <br>
-        <p>
-            Computer Photo by 
-            <a href="https://unsplash.com/@clemhlrdt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-               target="_blank">Clément Hélardot</a> 
-            on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                  target="_blank">Unsplash</a>
-        </p>
-        <br>
-    </div>          <!-- end of container-fluid div -->
-</body>
+        <div class="col-sm-4 col3">
+          <h2>C#</h2>
+          <p>C# is also a compiled, OO language</p>
+        </div>
 
-<!-- 
-    JavaScript to display the browser screen width, and update it as 
-    the window is resized
--->
-<script>
+        <div class="col-sm-4 col3">
+          <h2>Python</h2>
+          <p>Python is an interpreted language</p>
+        </div>
+      </div>
+      <!-- end of second row -->
+
+      <br />
+
+      <p>
+        Computer Photo by
+        <a
+          href="https://unsplash.com/@clemhlrdt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          target="_blank"
+        >
+          Clément Hélardot
+        </a>
+        on
+        <a
+          href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          target="_blank"
+        >
+          Unsplash
+        </a>
+      </p>
+      <br />
+    </div>
+    <!-- end of container-fluid div -->
+  </body>
+
+  <!--
+    JavaScript to display the browser screen width, and update it as the window is resized.
+  -->
+  <script>
     function displayWidth() {
-        let width = document.body.scrollWidth;
-        let widthDisplayEl = document.querySelector('#width')
-        widthDisplayEl.innerHTML = `Window width = ${width} pixels`
+      let width = document.body.scrollWidth;
+      let widthDisplayEl = document.querySelector("#width"); // h2 element above
+      widthDisplayEl.innerHTML = `Window width = ${width} pixels`;
     }
 
-    displayWidth()   // Call displayWidth to display initial size.
+    displayWidth(); // Call displayWidth to display initial size.
 
-    // Add resize event listener to the window object
-    // to update when window is resized 
-    window.addEventListener('resize', displayWidth)
-</script>
+    // Add resize event listener to the window object to update when window is resized
+    window.addEventListener("resize", displayWidth);
+  </script>
 </html>

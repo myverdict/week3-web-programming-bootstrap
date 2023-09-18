@@ -1,17 +1,17 @@
 /* For jumbotron_with_css.html */
 body {
-    margin: 15px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 1px;
+  margin: 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 .header {
-    padding: 50px;
-    border-radius: 10px;
-    background-color: gray;
-    color: white;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
 }
 
 .content {
-    padding: 15px;
+  padding: 15px;
 }
