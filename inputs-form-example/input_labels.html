@@ -1,117 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Input labels</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <ul>
-        <!-- Simplest form of input; default is "text" if type attribute is unspecified -->
-        <li>Unspecified input type - default is text</li>
-        <label>Enter some text: </label>
-        <input>
-        
-        <br><br>
+      <!-- Simplest form of input; default is "text" if type attribute is unspecified -->
+      <li>Unspecified input type - default is text</li>
+      <label>Enter some text: </label>
+      <input />
 
-        <!-- Input types -->
-        <li>Text input</li>
-        <label for="username">Name: </label> 
-        <input id="username" type="text" name="username">
-        
-        <br><br>
+      <br /><br />
 
-        <li>Email input</li>
-        <label for="user-email">Email: </label>
-        <input id="user-email" type="email" name="user-email">
-        
-        <br><br>
-        
-        <li>Number input</li>
-        <label for="lucky-number">Lucky number: </label>
-        <input id="lucky-number" type="number" value="0" name="lucky-number">
-        
-        <br><br>
-        
-        <li>Date input</li>
-        <label for="date">Date: </label> 
-        <input id="date" type="date" name="date">
-        
-        <br><br>
-        
-        <li>Time input</li>
-        <label for="time">Time: </label> 
-        <input id="time" type="time" name="time">
-        
-        <br><br>
-        
-        <li>Range input - default range is 0 to 100</li>
-        <label for="volume-range">Volume settings: </label>
-        <input id="volume-range" type="range" name="volume-range">
-        
-        <br><br>
-        
-        <li>Color input - default value is #000000 (black)</li>
-        <label for="fav-color">Favorite color: </label>
-        <input id="fav-color" type="color" name="fav-color">
-        
-        <br><br>
-        
-        <li>Password input</li>
-        <label for="pwd">Password: </label> 
-        <input id="pwd" type="password" name="pwd">
-        
-        <br><br>
-        
-        <li>Search input</li>
-        <!-- Remember to set a name for the search field, otherwise nothing will be submitted. -->
-        <label for="search-google">Search Google: </label>
-        <input id="search-google" type="search" name="gsearch">
-        
-        <br><br>
-        
-        <li>Checkbox input</li>
-        <label for="surety">Are you sure?</label>
-        <input id="surety" type="checkbox" name="surety" checked>
-        
-        <br><br>
-        
-        <li>Textarea</li>
-        <label for="feedback">Feedback: </label>
-        <textarea id="feedback" rows="15" cols="50" name="feedback"></textarea>
-        
-        <br><br>
-        
-        <li>Dropdown list</li>
-        <label for="fav-season">Favorite season: </label>
-        <select id="fav-season" name="fav-season">
-            <option value="spring">Spring</option>
-            <option value="summer">Summer</option>
-            <option value="fall">Fall</option>
-        </select>
-        
-        <br><br>
+      <!-- Input types -->
+      <li>Text input</li>
+      <label for="username">Name: </label>
+      <input id="username" type="text" name="username" />
 
-        <li>Radio buttons - Always group radio buttons with the name attribute</li>
-        Are you a student?
-        <!-- If there is no name attribute, then the radio buttons would not be synchronized as per the group. -->
-        <input id="choice-yes" name="choice" type="radio" checked> 
-        <label for="choice-yes">Yes</label>
+      <br /><br />
 
-        <input id="choice-no" name="choice" type="radio"> 
-        <label for="choice-no">No</label>
+      <li>Email input</li>
+      <label for="user-email">Email: </label>
+      <input id="user-email" type="email" name="user-email" />
 
-        <br><br>
+      <br /><br />
 
-        <li>Uploading a file</li>
-        <label for="file-upload">Upload your document</label><br>
-        <input id="file-upload" type="file" name="file">
-        
-        <br><br>
+      <li>Number input</li>
+      <label for="lucky-number">Lucky number: </label>
+      <input id="lucky-number" type="number" value="0" name="lucky-number" />
 
-        <li>Submit input button</li>
-        <input type="submit" name="submit">
+      <br /><br />
+
+      <li>Date input</li>
+      <label for="date">Date: </label>
+      <input id="date" type="date" name="date" />
+
+      <br /><br />
+
+      <li>Time input</li>
+      <label for="time">Time: </label>
+      <input id="time" type="time" name="time" />
+
+      <br /><br />
+
+      <li>Range input - default range is 0 to 100</li>
+      <label for="volume-range">Volume settings: </label>
+      <input id="volume-range" type="range" name="volume-range" />
+
+      <br /><br />
+
+      <li>Color input - default value is #000000 (black)</li>
+      <label for="fav-color">Favorite color: </label>
+      <input id="fav-color" type="color" name="fav-color" />
+
+      <br /><br />
+
+      <li>Password input</li>
+      <label for="pwd">Password: </label>
+      <input id="pwd" type="password" name="pwd" />
+
+      <br /><br />
+
+      <li>Search input</li>
+      <!-- Remember to set a name for the search field, otherwise nothing will be submitted. -->
+      <label for="search-google">Search Google: </label>
+      <input id="search-google" type="search" name="gsearch" />
+
+      <br /><br />
+
+      <li>Checkbox input</li>
+      <label for="surety">Are you sure?</label>
+      <input id="surety" type="checkbox" name="surety" checked />
+
+      <br /><br />
+
+      <li>Textarea</li>
+      <label for="feedback">Feedback: </label>
+      <textarea id="feedback" rows="15" cols="50" name="feedback"></textarea>
+
+      <br /><br />
+
+      <li>Dropdown list</li>
+      <label for="fav-season">Favorite season: </label>
+      <select id="fav-season" name="fav-season">
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="fall">Fall</option>
+      </select>
+
+      <br /><br />
+
+      <li>
+        Radio buttons - Always group radio buttons with the name attribute
+      </li>
+      Are you a student?
+      <!-- If there is no name attribute, then the radio buttons would not be synchronized as per the group. -->
+      <input id="choice-yes" name="choice" type="radio" checked />
+      <label for="choice-yes">Yes</label>
+
+      <input id="choice-no" name="choice" type="radio" />
+      <label for="choice-no">No</label>
+
+      <br /><br />
+
+      <li>Uploading a file</li>
+      <label for="file-upload">Upload your document</label>
+      <br />
+      <input id="file-upload" type="file" name="file" />
+
+      <br /><br />
+
+      <li>Submit input button</li>
+      <input type="submit" name="submit" />
     </ul>
-</body>
+  </body>
 </html>

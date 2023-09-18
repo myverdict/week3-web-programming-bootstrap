@@ -1,27 +1,26 @@
 /* Class */
 .section {
-    border: 1px double black;
-    box-shadow: 2px 2px gray;
-    margin: 5px;
-    padding: 5px;
+  border: 1px double black;
+  box-shadow: 2px 2px gray;
+  margin: 5px;
+  padding: 5px;
 }
 
 .content {
-    background: gray;
-    padding: 10px;
+  background: gray;
+  padding: 10px;
 }
-
 
 /* ID */
 #important {
-    font-weight: bold;
-    color: darkred;
+  font-weight: bold;
+  color: darkred;
 }
 
 #section-1 {
-    background: pink;
+  background: pink;
 }
 
 #section-2 {
-    background: greenyellow;
+  background: greenyellow;
 }

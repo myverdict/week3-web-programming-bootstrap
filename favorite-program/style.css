@@ -2,14 +2,14 @@
 
 /* Classes */
 .header {
-    text-align: center;
-    background-color: indianred;
+  text-align: center;
+  background-color: indianred;
 }
 
 .github-link {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
 .font-mono {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
