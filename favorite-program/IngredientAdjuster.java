@@ -38,6 +38,9 @@ public class IngredientAdjuster
 						   				 "you will need: \n" +
 						   				 sugar + " cups of sugar\n" +
 						   				 butter + " cups of butter\n" +
-						   				 flour + " cups of flour");
+											 flour + " cups of flour");
+
+		// Close scanner object.
+		keyboard.close();
 	}
 }
